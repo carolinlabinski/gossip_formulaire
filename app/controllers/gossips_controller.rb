@@ -10,7 +10,7 @@ def create
 @gossip = Gossip.new(title: params[:title],content: params[:content],user_id:11)
 
  if @gossip.save
-  redirect_to '/'
+  redirect_to(root_path, notice: "Gossip successfully created!")
  else
   render '/gossips/new.html.erb'
  
