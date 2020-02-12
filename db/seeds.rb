@@ -49,7 +49,7 @@ User.create(
 
 20.times do |index|
   Gossip.create!(
-    title: Faker::Lorem.characters(number: 13),
+    title: Faker::Lorem.characters(number: 10),
     content: Faker::TvShows::Simpsons.quote,
     user_id: rand(1..10)
   )
