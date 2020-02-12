@@ -1,9 +1,11 @@
 class GossipsController < ApplicationController
+   
+  def new
+   @gossip=Gossip.new
+  end
+
    def show
     @gossip = Gossip.find(params[:id])
-   end
-
-  def new
    end
 
 def create

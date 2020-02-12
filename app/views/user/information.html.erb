@@ -1,21 +1,21 @@
 <body>
-  <h1 class="h1 text-center mt-3 mb-4 ml-3">The author's page</h1>
-  <p class="lead text-center mt-3 mb-4 ml-3">Hi! It's <%= @author.first_name %>'s page! Check this out.</p>
+  <h1 class="h1 text-center mt-3 mb-4 ml-3">La page d'auteur</h1>
   <div  class="card-deck mx-4 d-flex justify-content-between">
     <div class="card d-flex justify-content-between mx-4" style="width: 20rem;">
       <div class="card-header">
-        My personal info
+      Information personelle
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">My firstname: <%= @author.first_name %></li>
-        <li class="list-group-item">My lastname: <%= @author.last_name %></li>
-        <li class="list-group-item">My age: <%= @author.age %></li>
-        <li class="list-group-item">Where I live: <%= @author.city.name %></li>
+        <li class="list-group-item">Prénom: <%= @author.first_name %></li>
+        <li class="list-group-item">Nom: <%= @author.last_name %></li>
+        <li class="list-group-item">E-mail: <%= @author.email %></li>
+        <li class="list-group-item">Age: <%= @author.age %></li>
+        <li class="list-group-item">Ville: <%= @author.city.name %></li>
       </ul>
     </div>
     <div class="card d-flex justify-content-between mx-4" style="width: 20rem;">
       <div class="card-header">
-        Get to know more about me:
+        Plus d'informations sur l'auteur:
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><%= @author.description %></li>
@@ -23,5 +23,5 @@
     </div>
   </div>
   <br>
-  <p class="lead mt-3 mb-4 ml-3 text-center"><%= link_to "Return to the homepage", root_path, :class => "btn btn-primary" %></p>
+  <p class="lead mt-3 mb-4 ml-3 text-center"><%= link_to "Retour à la page d'accueil", root_path, :class => "btn btn-primary" %></p>
 </body>
