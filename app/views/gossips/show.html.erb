@@ -5,6 +5,7 @@
         <div class="card-body">
           <h5 class="card-title">The gossip '<%= @gossip.title %>'</h5>
           <h6 class="card-subtitle mb-3 text-muted">submitted by <%= @gossip.user.first_name %></h6>
+          <h6 class="card-subtitle mb-3 text-muted">City: <%= @gossip.user.city.name %></h6>
           <h4 class="card-text mb-4"><small class="text-muted"><%= @gossip.content %></small></h4>
           <%= link_to "See the author's profile", user_path(@gossip.user_id), :class =>"card-link" %>
         </div>

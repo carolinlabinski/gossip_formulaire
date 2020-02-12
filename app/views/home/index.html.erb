@@ -17,7 +17,7 @@
       
         <div  class="card-deck mb-3 d-flex justify-content-between">
           <% @gossips.each.with_index(1) do |gossip, index| %>
-            <div class="col-sm-6 mt-4 mb-4">
+            <div class="col-sm-4 mt-6 mb-4">
               <div class="card">
                 <div class="card-body d-flex align-items-center flex-column">
                   <h5 class="card-title"><%= link_to "Gossip n°#{index}", gossips_path(gossip.id) %></h5>
